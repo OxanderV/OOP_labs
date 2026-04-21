@@ -5,7 +5,7 @@ public class GradeBook
     int examScore;
     double finalGrade;
 
-    private int fixScore(int score)
+    public int fixScore(int score)
     {
         if (score < 0) return 0;
         if (score > 100) return 100;
