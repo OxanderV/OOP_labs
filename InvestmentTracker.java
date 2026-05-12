@@ -1,19 +1,19 @@
 public class InvestmentTracker
 {
-    double Principal;
-    double InterestRate;
-    int Years;
+    double principalVal;
+    double interestRateVal;
+    int yearsVal;
 
     public InvestmentTracker(double principal, double interestRate, int years)
     {
-        Principal = principal;
-        InterestRate = interestRate;
-        Years = years;
+        principalVal = principal;
+        interestRateVal = interestRate;
+        yearsVal = years;
     }
 
     public double calculateTotal()
     {
-        return Principal * Math.pow((1 + InterestRate), Years);
+        return principalVal * Math.pow((1 + interestRateVal), yearsVal);
     }
 
     public static void main(String[] args)
